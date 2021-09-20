@@ -1,5 +1,5 @@
 .DS_Store
-.idea/*
+.idea
 .vscode
 *.pyc
 .pytest_cache
