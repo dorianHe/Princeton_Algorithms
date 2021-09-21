@@ -7,6 +7,8 @@ class ReaderFactory:
             reader = IntersectionReader()
         elif question_id == 2:
             reader = PermutationReader()
+        elif question_id == 3:
+            reader = DutchFlagReader()
         else:
             return None
         return reader
@@ -36,3 +38,11 @@ class IntersectionReader(Reader):
             x_b = list(map(lambda x: int(x), data[2].split()))
             y_b = list(map(lambda x: int(x), data[3].split()))
         return [(x, y) for x, y in zip(x_a, y_a)], [(x, y) for x, y in zip(x_b, y_b)]
+
+
+class DutchFlagReader(Reader):
+    def read(self, file_path):
+        with open(file_path, 'r') as f:
+            data = f.readlines()
+            arr = list(map(lambda x: int(x), data[0].split()))
+        return arr
