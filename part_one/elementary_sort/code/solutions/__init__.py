@@ -1,2 +1,3 @@
-from solutions.intersection_of_two_sets import SolutionDuplicate, SolutionUnique
-from solutions.fileio import Reader
+from solutions.intersection_of_two_sets import *
+from solutions.permutaions import *
+from solutions.fileio import *

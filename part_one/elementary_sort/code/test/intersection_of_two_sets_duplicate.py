@@ -1,12 +1,15 @@
 import os
 import unittest
-from solutions import Reader, SolutionDuplicate
+from solutions import ReaderFactory, SolutionDuplicate
 
 
 class IntersectionDuplicateTest(unittest.TestCase):
     def test_general_input(self):
         file_path = os.path.join('data', 'intersection_of_two_sets', 'general_input.txt')
-        a, b = Reader.read(file_path)
+        question_id = 1
+        reader_factory = ReaderFactory()
+        reader = reader_factory.create_reader(question_id)
+        a, b = reader.read(file_path)
         solution = SolutionDuplicate()
 
         res = solution.find(a, b)
@@ -15,7 +18,10 @@ class IntersectionDuplicateTest(unittest.TestCase):
 
     def test_zero_count(self):
         file_path = os.path.join('data', 'intersection_of_two_sets', 'zero_count.txt')
-        a, b = Reader.read(file_path)
+        question_id = 1
+        reader_factory = ReaderFactory()
+        reader = reader_factory.create_reader(question_id)
+        a, b = reader.read(file_path)
         solution = SolutionDuplicate()
 
         res = solution.find(a, b)
@@ -24,7 +30,10 @@ class IntersectionDuplicateTest(unittest.TestCase):
 
     def test_duplicate_count(self):
         file_path = os.path.join('data', 'intersection_of_two_sets', 'duplicate.txt')
-        a, b = Reader.read(file_path)
+        question_id = 1
+        reader_factory = ReaderFactory()
+        reader = reader_factory.create_reader(question_id)
+        a, b = reader.read(file_path)
         solution = SolutionDuplicate()
 
         res = solution.find(a, b)
