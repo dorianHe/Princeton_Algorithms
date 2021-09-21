@@ -19,6 +19,10 @@ If there is no assumption on the unique x-value, we can still solve this problem
 
 Permutation. Given two integer arrays of size `n`, design a subquadratic algorithm to determine whether one is a permutation of the other. That is, do they contain exactly the same entries but, possibly, in a different order.
 
+Answer:
+
+I actually can't find questions to ask or details that need clarification from the interviwer. Both array contain integers. Whether there exist duplicated numbers seem not influence the result. So I will directly start illustrate my solution. A solution with time complexity of `O(n)` and space complexity of `O(n)` is to use hashmap. Put both array elements into two counters then check whether the hashmaps are the same. Another solution with time complexity of `O(nlogn)` and constant space complexity is to use sort. Sort both arrays then check elements one by one. Once we find different values returns `False` otherwise return `True`.
+
 
 ## Question 3
 
