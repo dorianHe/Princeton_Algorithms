@@ -26,7 +26,7 @@ I actually can't find questions to ask or details that need clarification from t
 
 ## Question 3
 
-Dutch national flag. Given an array of nnn buckets, each containing a red, white, or blue pebble, sort them by color. The allowed operations are:
+Dutch national flag. Given an array of `n` buckets, each containing a red, white, or blue pebble, sort them by color. The allowed operations are:
 
     swap(i,j):  swap the pebble in bucket i with the pebble in bucket j.
     color(i): determine the color of the pebble in bucket i.
@@ -36,4 +36,6 @@ The performance requirements are as follows:
     At most n calls to color().
     At most n calls to swap().
     Constant extra space.
+    
+A classic programming problem. The solution with time complexity of `O(n)` and constant space complexity is based on 3 pointers.
 
