@@ -1,4 +1,4 @@
-# Interview Questions: Mergesort (ungraded)
+# Interview Questions: Mergesort
 
 ## Question 1
 
