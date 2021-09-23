@@ -14,6 +14,10 @@ This problem actually reminds me of another problem which asks to sort many numb
 
 Counting inversions. An inversion in an array `a` is a pair of entries `a[i]` and `a[j]` such that `i<j` but `a[i]>a[j]`. Given an array, design a linearithmic algorithm to count the number of inversions.
 
+The brute-force solution with time complexity of `O(n^2)` is easy to find. Simply two for-loops with condition checks work out fine. But the tricky one is to solve it in linearithmic time. Honestly speaking, I took a look at the topic and then realized that the solution is based on merge sort. When doing merge sort, using the inversion condition to check and count. About the time complexity of merge sort, I give a simple proof here.
+
+**Proof**: In each recursion, the input is split into 2 parts until only one element remaining. This is the depth of the recursion tree, which is `logn`. At each level, we do the merge. This merge is applied on n elements. So the time complexity is `O(nlogn)`.
+
 
 ## Question 3
 
