@@ -11,6 +11,9 @@ When implementing merge sort, I made a mistake about splitting the array. The pr
 ## collinear points
 when to use static method in a class. It is always recommended in pycharm which is annoying sometimes.
 
+## quick sort
+nuts & bolts problem remains undone.
+
 ## priority queue
 implement a randomized priority queue whose method `delRandom` takes `O(logn)` time complexity.
 
